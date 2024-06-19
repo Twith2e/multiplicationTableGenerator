@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="input-btn-wrapper">
+        <div class="input-wrapper">
+          <input
+            autocomplete="off"
+            autofocus
+            type="text"
+            placeholder="Input the starting point"
+            id="start"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            placeholder="Input the end point"
+            id="end"
+          />
+        </div>
+        <div class="btn-wrapper">
+          <button onclick="showTable()"><span>Show Table</span></button>
+        </div>
+      </div>
+      <div class="show-multiples-wrapper">
+        <h2 id="head">
+          Multiplication Table from <span id="first-num"></span> to
+          <span id="second-num"></span>
+        </h2>
+        <div class="show-multiples" id="show-multiples"></div>
+      </div>
+    </div>
+  </body>
+</html>
