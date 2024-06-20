@@ -11,29 +11,38 @@
     <div class="body-wrapper">
       <div class="input-btn-wrapper">
         <div class="input-wrapper">
-          <input
-            autocomplete="off"
-            autofocus
-            type="text"
-            placeholder="Input the starting point"
-            id="start"
-          />
-          <input
-            autocomplete="off"
-            type="text"
-            placeholder="Input the end point"
-            id="end"
-          />
+          <div class="first-input-wrapper">
+            <input
+              autocomplete="off"
+              autofocus
+              type="text"
+              placeholder="Input the starting point"
+              id="start"
+            />
+            <span class="error-message" id="error-messages"
+              >Input fields can't be empty!!!</span
+            >
+          </div>
+
+          <div class="second-input-wrapper">
+            <input
+              autocomplete="off"
+              type="text"
+              placeholder="Input the end point"
+              id="end"
+            />
+            <span class="error-msg">Too Low!!!</span>
+            <span class="error-message1" id="error-messages"
+              >Input fields can't be empty!!!</span
+            >
+          </div>
         </div>
         <div class="btn-wrapper">
           <button onclick="showTable()"><span>Show Table</span></button>
         </div>
       </div>
       <div class="show-multiples-wrapper">
-        <h2 id="head">
-          Multiplication Table from <span id="first-num"></span> to
-          <span id="second-num"></span>
-        </h2>
+        <h2 id="head"></h2>
         <div class="show-multiples" id="show-multiples"></div>
       </div>
     </div>
