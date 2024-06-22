@@ -9,7 +9,7 @@ function showTable() {
   document.getElementById("error-messages2").innerText = "";
 
   if (startInput.value != "" && endInput.value != "") {
-    if (endInput.value > startInput.value) {
+    if (Number(endInput.value) > Number(startInput.value)) {
       myHead = document.getElementById("head");
       myHead.style.display = "block";
       myHead.innerHTML = `${startInput.value} to ${endInput.value} multiples table`;
@@ -29,7 +29,7 @@ function showTable() {
       startInput.style.borderColor = "green";
       endInput.style.borderColor = "green";
       document.querySelector(".error-msg").style.display = "none";
-    } else if (endInput.value === startInput.value) {
+    } else if (Number(endInput.value) === Number(startInput.value)) {
       myHead = document.getElementById("head");
       myHead.style.display = "block";
       myHead.innerHTML = `${startInput.value} multiples table`;
