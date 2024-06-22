@@ -5,6 +5,8 @@ function showTable() {
   displayNum.innerHTML = "";
   myHead = document.getElementById("head");
   myHead.style.display = "none";
+  document.getElementById("error-messages1").innerText = "";
+  document.getElementById("error-messages2").innerText = "";
 
   if (startInput.value != "" && endInput.value != "") {
     if (endInput.value > startInput.value) {
@@ -54,10 +56,11 @@ function showTable() {
       myHead.style.display = "none";
     }
   } else {
-    // document.getElementById("error-messages").style.display = "block";
-    // startInput.style.borderColor = "red";
-    // endInput.style.borderColor = "red";
-    alert("Input Fields are empty!!!");
+    document.getElementById("error-messages1").innerText = "Fill the inputs!!!";
+    document.getElementById("error-messages2").innerText = "Fill the inputs!!!";
+    startInput.style.borderColor = "red";
+    endInput.style.borderColor = "red";
+    // alert("Input Fields are empty!!!");
     myHead.style.display = "none";
   }
 }

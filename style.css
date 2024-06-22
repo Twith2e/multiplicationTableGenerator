@@ -75,16 +75,21 @@ button:active {
 }
 
 .error-msg,
-#error-messages {
+#error-messages1,
+#error-messages2 {
   bottom: -15px;
   color: red;
-  display: none;
   left: 0;
   font-size: 12px;
   position: absolute;
   white-space: nowrap;
 }
 
+.error-msg {
+  display: none;
+}
+
+.first-input-wrapper,
 .second-input-wrapper {
   position: relative;
 }
